@@ -1,10 +1,10 @@
-packages/**/dist/
-packages/**/dist-client/
-packages/**/dist-server/
+dist/
+dist-client/
+dist-server/
 node_modules/
 logs/
 uploads/
-attachments/
+# attachments/
 extensions/
 *.sqlite
 *.sql
