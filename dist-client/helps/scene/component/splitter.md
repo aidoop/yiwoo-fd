@@ -1,3 +1,0 @@
-# splitter[en]
-
-## properties

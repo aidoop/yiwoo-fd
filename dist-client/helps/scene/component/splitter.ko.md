@@ -1,3 +1,0 @@
-# splitter[ko]
-
-## properties

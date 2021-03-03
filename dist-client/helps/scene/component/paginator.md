@@ -1,3 +1,0 @@
-# paginator[en]
-
-## properties

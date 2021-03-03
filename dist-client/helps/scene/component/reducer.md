@@ -1,3 +1,0 @@
-# reducer[en]
-
-## properties

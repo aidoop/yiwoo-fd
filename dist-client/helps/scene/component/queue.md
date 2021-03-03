@@ -1,3 +1,0 @@
-# queque[en]
-
-## properties

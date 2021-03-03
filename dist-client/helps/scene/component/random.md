@@ -1,6 +1,0 @@
-# random[en]
-
-
-## properties
-
-### 

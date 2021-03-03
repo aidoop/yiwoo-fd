@@ -1,3 +1,0 @@
-# reducer[zh]
-
-## properties

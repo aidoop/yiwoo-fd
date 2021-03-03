@@ -1,6 +1,0 @@
-# data-cell[en]
-
-
-## properties
-
-### 

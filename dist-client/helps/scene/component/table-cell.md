@@ -1,6 +1,0 @@
-# table-cell[en]
-
-
-## properties
-
-### 

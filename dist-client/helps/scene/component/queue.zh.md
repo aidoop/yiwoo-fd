@@ -1,3 +1,0 @@
-# queque[zh]
-
-## properties
