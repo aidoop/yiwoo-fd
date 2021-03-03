@@ -1,0 +1,6 @@
+# news-ticker[en]
+
+
+## properties
+
+### 

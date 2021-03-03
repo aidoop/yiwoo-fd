@@ -1,0 +1,1 @@
+docker exec -it yiwoo-fd npm run migration -- --mode=production

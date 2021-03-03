@@ -1,0 +1,12 @@
+# indoor-map[ko]
+![Container][Container-03]  
+인도어 맵
+
+
+- Category : Container
+
+[Container-03]: {{site.baseurl}}/assets/components/container-03.png
+{: height="200px"}
+
+## properties
+

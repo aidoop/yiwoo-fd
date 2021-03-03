@@ -1,0 +1,48 @@
+{
+  "name": "@things-factory/yiwoo-fd",
+  "version": "3.0.0-beta.153",
+  "main": "dist-server/index.js",
+  "browser": "client/index.js",
+  "things-factory": true,
+  "license": "MIT",
+  "author": "heartyoh",
+  "description": "",
+  "publishConfig": {
+    "access": "public",
+    "@things-factory:registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/things-factory/things-factory.git",
+    "directory": "packages/yiwoo-fd"
+  },
+  "scripts": {
+    "serve": "things-factory yiwoo-fd",
+    "serve:dev": "npm run build:server && things-factory-dev yiwoo-fd",
+    "build": "tsc --p tsconfig.json",
+    "build:client": "npm run clean:client && webpack --config node_modules/@things-factory/builder/webpack.config.js",
+    "build:server": "npm run clean:server && tsc",
+    "clean:server": "rm -rf dist-server",
+    "clean:client": "rm -rf dist-client",
+    "clean": "npm run clean:server && npm run clean:client",
+    "migration": "npm run build:server && things-factory-migration",
+    "migration:privileges": "npm run build:server && things-factory-migration-privileges",
+    "migration:create": "node node_modules/typeorm/cli.js migration:create -d ./server/migrations",
+    "migration:generate": "node node_modules/typeorm/cli.js migration:generate",
+    "migration:run": "node node_modules/typeorm/cli.js migration:run",
+    "migration:revert": "node node_modules/typeorm/cli.js migration:revert",
+    "stop:dev": "kill $(lsof -t -i:3000,3001)",
+    "stop": "things-factory-stop yiwoo-fd",
+    "docker": "things-factory-dockerize hatiolab/yiwoo-fd:latest",
+    "docker:run": "docker run -it -p 4000:3000 hatiolab/yiwoo-fd:latest"
+  },
+  "dependencies": {
+    "@things-factory/scene-grist": "^3.0.0-beta.157",
+    "@things-factory/scene-indoor-map": "^3.0.0-beta.157",
+    "@things-factory/scene-tab": "^3.0.0-beta.157",
+    "@things-factory/operato-predictor": "^3.0.0-beta.157"
+  },
+  "devDependencies": {
+    "@things-factory/builder": "^3.0.0-beta.153"
+  }
+}
