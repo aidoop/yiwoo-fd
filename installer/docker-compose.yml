@@ -23,7 +23,7 @@ services:
       - "27017:27017"
 
   app:
-    image: aidoop/aidoop-fd
+    image: aidoop/yiwoo-fd
     build: .
     privileged: true
     container_name: app
