@@ -1,1 +1,1 @@
-curl -fsSL https://raw.githubusercontent.com/things-factory/things-factory/master/packages/yiwoo-fd/installer/install.sh | bash -s
+curl -fsSL https://raw.githubusercontent.com/aidoop/yiwoo-fd/main/installer/install.sh | bash -s
